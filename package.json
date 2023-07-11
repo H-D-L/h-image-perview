@@ -1,0 +1,45 @@
+{
+  "name": "h-image-perview",
+  "private": false,
+  "description": "图片预览",
+  "version": "0.0.9",
+  "author": "huidongliang",
+  "main": "dist/index.umd.ts",
+  "module": "dist/index.es.ts",
+  "typings": "dist/components/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./style.css": "./dist/style.css",
+    ".": {
+      "import": "./dist/index.es.ts",
+      "require": "./dist/index.umd.ts"
+    }
+  },
+  "keywords": [
+    "image",
+    "picture",
+    "imagePerview",
+    "image-perview",
+    "image_perview"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "terser": "^5.18.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "1.4.1",
+    "vite-svg-loader": "^4.0.0",
+    "vue-tsc": "^1.4.2"
+  }
+}
